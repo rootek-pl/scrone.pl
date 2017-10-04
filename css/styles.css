@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+
+/*======= GLOBAL VARIABLES =======*/
+
+:root {
+    --main-bg-color: #e6e6e6;
+    --main-font-color: #000000;
+}
+
+/*======= STYLES =======*/
+
+* {
+    font-style: normal;
+}
+
+svg {
+    max-height: 200px;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+
+@media (max-width: 600px) {
+    body{
+
+    }
+}
