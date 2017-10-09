@@ -1,9 +1,8 @@
-(function () {
-    'use strict';
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('./service-worker.js')
-            .then(function () { console.log('Service Worker Registered'); });
-    }
-
-})();
+$('.internal-link').click(function (e) {
+    var section = $(this).attr('href');
+    e.preventDefault();
+    
+    $($(section).parent()).animate({
+        scrollTop: $(section)[0].offsetTop,
+    }, 500, "swing");
+});
