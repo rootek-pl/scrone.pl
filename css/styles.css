@@ -42,7 +42,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	min-width: 100%;
-	min-height: 13%;
+	min-height: 10%;
 	background-color: var(--header-basic-color);
 }
 
@@ -103,7 +103,7 @@ svg {
 .nav-button {
 	flex-grow: 1;
 	width: 100%;
-	min-width: 90px;
+	min-width: 110px;
 	height: 100%;
 	text-align: center;
 	display: flex;
