@@ -53,7 +53,8 @@ header {
 
 #logo {
 	height: 90%;
-	margin-left: 10px;
+	position: relative;
+	left: 10px;
 }
 
 #content {
@@ -81,8 +82,8 @@ svg {
 	flex-grow: 1;
 	display: flex;
 	height: 100%;
-    width: 100%;
-    font-weight: bold;
+	width: 100%;
+	font-weight: bold;
 }
 
 #nav a:link, #nav a:visited {
@@ -90,14 +91,14 @@ svg {
 	color: var(--main-color-text);
 }
 
-#nav a.internal-link:hover{
-    color: var(--nav-hovered-text-color);
-    transition: color var(--nav-button-transition-time);
+#nav a.internal-link:hover {
+	color: var(--nav-hovered-text-color);
+	transition: color var(--nav-button-transition-time);
 }
 
-#nav a.internal-link:active{
-    transition: color 0s;
-    color: var(--nav-hovered-text-color);
+#nav a.internal-link:active {
+	transition: color 0s;
+	color: var(--nav-hovered-text-color);
 }
 
 .nav-button {
@@ -112,9 +113,9 @@ svg {
 }
 
 .internal-link > .nav-button:hover {
-    transition: background-color var(--nav-button-transition-time);
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: background-color var(--nav-button-transition-time);
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (max-width: 720px) {
@@ -124,11 +125,12 @@ svg {
 
 	#nav {
 		display: block;
+		width: 100%;
 	}
 
 	.internal-link > div {
 		background-color: var(--nav-basic-color);
-		}
+	}
 
 	.internal-link div {
 		display: none;
@@ -137,6 +139,11 @@ svg {
 	#nav:hover > .internal-link div {
 		display: flex;
 		z-index: 1;
+	}
+
+	.menu-button div {
+		text-align: right;
+		padding-right: 5%;
 	}
 }
 
