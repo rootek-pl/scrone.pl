@@ -59,6 +59,7 @@ header {
 #content {
 	position: relative;
 	overflow-y: scroll;
+	z-index: -1;
 }
 
 footer {
@@ -90,12 +91,12 @@ svg {
 	color: var(--main-color-text);
 }
 
-#nav a:hover{
+#nav a.internal-link:hover{
     color: var(--nav-hovered-text-color);
     transition: color var(--nav-button-transition-time);
 }
 
-#nav a:active{
+#nav a.internal-link:active{
     transition: color 0s;
     color: var(--nav-hovered-text-color);
 }
@@ -111,7 +112,7 @@ svg {
 	justify-content: center;
 }
 
-.nav-button:hover {
+.internal-link > .nav-button:hover {
     transition: background-color var(--nav-button-transition-time);
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -121,10 +122,31 @@ svg {
 	body {
 		background-color: #808080;
 	}
+
+	#nav {
+		display: block;
+		border: 2px solid black;
+	}
+
+	.internal-link > div {
+		background-color: var(--nav-basic-color);
+		}
+
+	.internal-link div {
+		display: none;
+	}
+
+	#nav:hover > .internal-link div {
+		display: flex;
+	}
 }
 
 @media (min-width: 721px) {
 	body {
 		background-color: aqua;
+	}
+
+	.menu-button > div {
+		display: none;
 	}
 }
