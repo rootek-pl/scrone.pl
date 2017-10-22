@@ -125,7 +125,6 @@ svg {
 
 	#nav {
 		display: block;
-		border: 2px solid black;
 	}
 
 	.internal-link > div {
@@ -138,6 +137,7 @@ svg {
 
 	#nav:hover > .internal-link div {
 		display: flex;
+		z-index: 1;
 	}
 }
 
