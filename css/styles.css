@@ -59,7 +59,6 @@ header {
 #content {
 	position: relative;
 	overflow-y: scroll;
-	z-index: -1;
 }
 
 footer {
