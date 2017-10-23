@@ -44,6 +44,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+p {
+	text-align: justify;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
@@ -77,6 +81,8 @@ footer {
 
 svg {
 	max-height: 200px;
+	display: block;
+	margin: auto;
 }
 
 #nav {
@@ -131,6 +137,20 @@ svg {
 
 div h1 {
 	text-align: left;
+	margin-bottom: 1%;
+}
+
+div h3 {
+	text-align: center;
+}
+
+#services ul {
+	display: flex;
+}
+
+#services li {
+	justify-content: center;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 720px) {
@@ -160,6 +180,14 @@ div h1 {
 		text-align: right;
 		padding-right: 5%;
 	}
+
+	#services ul{
+		flex-direction: column;
+	}
+
+	#services li{
+		width: 95%;
+	}
 }
 
 @media (min-width: 721px) {
@@ -169,5 +197,13 @@ div h1 {
 
 	.menu-button > div {
 		display: none;
+	}
+	
+#services ul {
+	justify-content: space-between
+}
+
+	#services li{
+		width: 22.5%;
 	}
 }
