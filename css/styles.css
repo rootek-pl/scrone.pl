@@ -1,3 +1,6 @@
+/*======= IMPORTS =======*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 /*======= GLOBAL VARIABLES =======*/
 
 :root {
@@ -13,6 +16,8 @@
 }
 
 /*======= STYLES =======*/
+
+
 
 * {
 	box-sizing: border-box;
@@ -35,6 +40,7 @@ body {
 	background-color: var(--main-bg-color);
 	color: var(--main-font-color);
 	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
